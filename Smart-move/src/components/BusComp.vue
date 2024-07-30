@@ -5,35 +5,28 @@
             <v-card :style="cardStyle" style="opacity: 0.5;"></v-card>
             
             <!-- Button bus or Train -->
-            <div class="d-flex mx-auto rounded-pill my-15" style="width: 250px; height: 50px; background-color: white;">
-                <button style="width: 125px; height: 50px; background-color: #E8DEF8;" class="rounded-ts-pill pa-3 rounded-bs-pill">
-                    <h4  class="text-black text-center">Bus</h4>
+            <div id="bus"  class="d-flex mx-auto rounded-pill my-10 " style="width: 250px; height: 50px; background-color: white;">
+                <button  onclick="location.href='/'" style="width: 125px; height: 50px; background-color: #E8DEF8;" class="rounded-ts-pill pa-3 rounded-bs-pill border">
+                    <h4  class="text-black text-center ">Bus</h4>
                 </button>  
-                <button style="width: 125px; height: 50px; background-color: white;" class="rounded-te-pill pa-3 rounded-be-pill">
-                    <h4  class="text-black text-center">Train</h4>
+                <button id="train" onclick="location.href='/train'" style="width: 125px; height: 50px; background-color: white;" class="rounded-te-pill pa-3 rounded-be-pill border">
+                    <h4  class="text-black text-center ">Train</h4>
                 </button>
             </div>
             
             <!-- Isi bus -->
-            <section class="">
+            <section class="border">
                 <v-list :items="items" class="pa-2" lines="three" items-props>
                 </v-list>
-                <!-- <v-list
-                    :items="items"
-                    lines="three"
-                    item-props
-                    class="pa-2"
-                    >
-                        <template v-slot:subtitle="{ subtitle }">
-                            <div v-html="subtitle"></div>
-                        </template>
-                </v-list> -->
+                
             </section>
         </v-contaienr>
     </v-main>
 </template>
 <script >
     import imageUrl from '@/assets/tiket-bus-sinar-jaya.jpg';
+
+    
     export default{
         name : 'BusComp',
         data(){
@@ -62,6 +55,43 @@
                     {
                         title : 'Bus Sinar Jaya',
                         value : '2',
+                        props :{
+                            appendIcon : 'mdi-heart-outline'
+                        }
+                    },
+                    {type : 'divider', inset : true},
+                    {
+                        title : 'Bus Sinar Jaya',
+                        subtitle :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reiciendis doloremque assumenda commodi eos ratione magni aut animi laudantium autem?',
+                        value : '3',
+                        props :{
+                            appendIcon : 'mdi-heart-outline'
+                        }
+                    },
+                    {type : 'divider', inset : true},
+                    {
+                        title : 'Bus Sinar Jaya',
+                        subtitle :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reiciendis doloremque assumenda commodi eos ratione magni aut animi laudantium autem?',
+                        value : '3',
+                        props :{
+                            appendIcon : 'mdi-heart-outline'
+                        }
+                    },
+                    {type : 'divider', inset : true},
+                    {
+                        title : 'Bus Sinar Jaya',
+                        subtitle :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reiciendis doloremque assumenda commodi eos ratione magni aut animi laudantium autem?',
+                        value : '3',
+                        props :{
+                            appendIcon : 'mdi-heart-outline'
+                        }
+                    }
+                    ,
+                    {type : 'divider', inset : true},
+                    {
+                        title : 'Bus Sinar Jaya',
+                        subtitle :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reiciendis doloremque assumenda commodi eos ratione magni aut animi laudantium autem?',
+                        value : '3',
                         props :{
                             appendIcon : 'mdi-heart-outline'
                         }

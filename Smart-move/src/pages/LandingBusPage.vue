@@ -1,6 +1,7 @@
 <template>
-    <NavbarComp />
     <BusComp/>
+    <NavbarComp/>
+
 </template>
 
 <script setup>

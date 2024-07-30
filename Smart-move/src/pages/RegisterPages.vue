@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-    import RegisterCompVue from "../components/RegisterComp.vue";
+    import RegisterComp from "../components/RegisterComp.vue";
 </script>

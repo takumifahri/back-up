@@ -66,7 +66,7 @@
                     </v-btn>
                     
                     <div class="d-flex justify-center">
-                        <a href="#register" class="text-decoration-none text-black font-weight-light" style="font-size: 15px;"> <span class="text-red" >Don't </span> have any account? <span class="text-red">Create </span> one!</a>
+                        <a href="/register" class="text-decoration-none text-black font-weight-light" style="font-size: 15px;"> <span class="text-red" >Don't </span> have any account? <span class="text-red">Create </span> one!</a>
                     </div>
                     
 
